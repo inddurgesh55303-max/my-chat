@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Chat</title>
+    <style>
+        body { font-family: Arial; background: #f4f1ea; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; width: 300px; }
+        input { width: 100%; padding: 10px; margin: 15px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        button { background: #0b4f34; color: white; border: none; padding: 10px; width: 100%; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>🔒 Private Chat Login</h3>
+        <input type="password" id="pass" placeholder="Password daalein...">
+        <button onclick="login()">Login</button>
+    </div>
+    <script>
+        function login() {
+            let p = document.getElementById("pass").value;
+            if (p === "rajgyan12") {
+                window.location.href = "chat.html";
+            } else {
+                alert("Galat Password!");
+            }
+        }
+    </script>
+</body>
+</html>
